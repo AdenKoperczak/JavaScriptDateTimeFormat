@@ -28,3 +28,17 @@ DateTimeFormat uses a string format to create an output string from a date. This
 - %%  = just "%"
 - %-  = just "%"
 - %.  = Nothing. Useful if you want the minute of the hour followed by an "n" formated as "%M%.n". without "%." it would simply give the month.
+## test.html
+test.html is a simple html program which uses DateTimeFormat. It simply takes a format inputed by the user and outputs the current datetime in that format. It is useful for testing a format and as an example implementation.
+## How To Implement DateTimeFormat
+To use DateTimeFormat you can simply add dateTimeFormat.js into a web-based project. Then it can be "imported" into an html document by adding `<script src="{PathToDateTimeFormat.js}"></script>`. This will give all JavaScript on that document access to two things: dateTimeFormat - a function, and dateTimeFormater - a class.
+### dateTimeFormat
+The function dateTimeFormat takes two required arguments: "format" and "date". dateTimeFormat will format "date" (a JavaScript "Date" object) to "format".
+It can also be passed a local string.
+#### Example
+`dateTimeFormat("%Y/%M/%D",new Date());`
+### dateTimeFormater
+The constructor of dateTimeFormater takes one required argument: "format" and one optional argument "local". Once initialized, the "format" function of a dateTimeFormater can be called with a JavaScript "Date" object as an argument, and the formated datetime will be returned.
+#### Example
+`dTF = new dateTimeFormater("%Y/%M/%D");
+dTF.format(new Date())`
