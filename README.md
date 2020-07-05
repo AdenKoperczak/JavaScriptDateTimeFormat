@@ -1,9 +1,9 @@
-#JavaScript DateTimeFormat
-##Another way to format dates in JavaScript
+# JavaScript DateTimeFormat
+## Another way to format dates in JavaScript
 JavaScripts methodes for formating datetimes are quite versatile, but do come with some issues. While they do make localization a breaze, they also make writing your own format difficult. This code is useful for projects where localization is not important. It makes writing your own format easy, but localization hard.
-##General Concept
+## General Concept
 DateTimeFormat uses a string format to create an output string from a date. This format consists of "%" followed by one or more charicture, which represent diffrent parts of a date-time. To see a list of these see below.
-##List of Format Strings
+## List of Format Strings
 - %Y  = Full year (usually four digit)
 - %y  = two digit year
 - %Mn = The month as a two digit number
