@@ -27,4 +27,4 @@ DateTimeFormat uses a string format to create an output string from a date. This
 - %w  = The abbreviated name of the day of the week
 - %%  = just "%"
 - %-  = just "%"
-- %.  = Nothing. Useful if you want the minute of the hour followed by an "n" forated as "%M%.n". without "%." it would simply give the month.
+- %.  = Nothing. Useful if you want the minute of the hour followed by an "n" formated as "%M%.n". without "%." it would simply give the month.
