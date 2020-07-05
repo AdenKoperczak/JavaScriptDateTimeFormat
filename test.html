@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="dateTimeFormat.js"></script>
+    </head>
+    <body>
+        <input id="input" value="%Y/%Mn/%D %H:%M:%S GMT%zn"><br>
+        <span id="main"></span>
+        <script>
+            let tfm = new DateTimeFormater("");
+            let main = document.getElementById("main");
+            let input = document.getElementById("input");
+            setInterval(i => {
+                tfm._format = input.value;
+                main.innerText = tfm.format(new Date());
+            }, 1000)
+        </script>
+    </body>
+</html>
