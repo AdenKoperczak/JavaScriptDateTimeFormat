@@ -41,4 +41,5 @@ It can also be passed a local string.
 The constructor of dateTimeFormater takes one required argument: "format" and one optional argument "local". Once initialized, the "format" function of a dateTimeFormater can be called with a JavaScript "Date" object as an argument, and the formated datetime will be returned.
 #### Example
 `dTF = new dateTimeFormater("%Y/%M/%D");
+
 dTF.format(new Date())`
